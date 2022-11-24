@@ -1,5 +1,11 @@
 function isPalindrome(word) {
   // Write your algorithm here
+  let newWord = word.split("");
+  newWord = newWord.reverse();
+  newWord = newWord.reduce((prev, curr) => {
+    return prev + curr;
+  }, "");
+  return word === newWord ? true : false;
 }
 
 /* 
